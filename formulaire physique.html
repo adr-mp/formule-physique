@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formules de Physique</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            background-image: url("physique.webp");
+            background-attachment: fixed;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px; 
+        }
+        
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0; 
+        }
+          #logo{
+            width: 5%
+        }
+        .navbar-gradient {
+            background: linear-gradient(to right, #8aa214,  #071d9b); 
+        }        
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #db7434;
+            margin-top: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1%;
+            margin-right: 20%;
+            margin-top: 1%;
+            margin-left: 20%;
+        }
+        .formula {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+
+        .formula p {
+            margin: 8px 0;
+        }
+
+        .formula strong {
+            color: #2c3e50;
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        code {
+            background: #e8f4f8;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #e74c3c;
+            font-family: monospace;
+        }
+
+        #menu {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 1%;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+        }
+
+        #menu li {
+            margin: 5px 0;
+        }
+
+        #menu a {
+            color: #26ac11;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">  
+        <img id="logo" src="aaqq.png" alt="">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://adr-mp.github.io/accueil/acc.html">Accueil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://adr-mp.github.io/foncttionalite/fn.html">Fonctionnalités</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://adr-mp.github.io/a-propos/ap.html">À propos</a>
+                      </li>  
+                      <a class="navbar-brand" href="https://adr-mp.github.io/quaternion-plus/q.html">Quaternion+</a>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+   
+
+    <div id="menu"> 
+        <h1>Formules de Physique</h1>
+        <ul>
+            <li><a href="#mecanique">Mécanique</a></li>
+            <li><a href="#cinematique">Cinématique</a></li>
+            <li><a href="#thermodynamique">Thermodynamique</a></li>
+            <li><a href="#electricite">Électricité</a></li>
+            <li><a href="#magnetisme">Magnétisme</a></li>
+            <li><a href="#optique">Optique</a></li>
+            <li><a href="#ondes">Ondes</a></li>
+            <li><a href="#nucleaire">Physique Nucléaire</a></li>
+            <li><a href="#relativite">Relativité</a></li>
+            <li><a href="#quantique">Physique Quantique</a></li>
+        </ul>
+    </div>
+
+    <div id="mecanique" class="section">
+        <h2>Mécanique</h2>
+        <div class="formula">
+            <p><strong>Force gravitationnelle :</strong> <code>F = G(m₁m₂)/r²</code></p>
+            <p><strong>Poids :</strong> <code>P = mg</code></p>
+            <p><strong>Énergie cinétique :</strong> <code>Ec = ½mv²</code></p>
+            <p><strong>Énergie potentielle :</strong> <code>Ep = mgh</code></p>
+            <p><strong>Travail :</strong> <code>W = F·d</code></p>
+            <p><strong>Puissance :</strong> <code>P = W/t = F·v</code></p>
+        </div>
+    </div>
+
+    <div id="cinematique" class="section">
+        <h2>Cinématique</h2>
+        <div class="formula">
+            <p><strong>Vitesse moyenne :</strong> <code>v = Δx/Δt</code></p>
+            <p><strong>Accélération :</strong> <code>a = Δv/Δt</code></p>
+            <p><strong>MRUV - Position :</strong> <code>x = x₀ + v₀t + ½at²</code></p>
+            <p><strong>MRUV - Vitesse :</strong> <code>v = v₀ + at</code></p>
+            <p><strong>Vitesse finale :</strong> <code>v² = v₀² + 2aΔx</code></p>
+            <p><strong>MCU - Accélération :</strong> <code>a = v²/r</code></p>
+        </div>
+    </div>
+
+    <div id="thermodynamique" class="section">
+        <h2>Thermodynamique</h2>
+        <div class="formula">
+            <p><strong>Loi des gaz parfaits :</strong> <code>PV = nRT</code></p>
+            <p><strong>Premier principe :</strong> <code>ΔU = Q + W</code></p>
+            <p><strong>Chaleur :</strong> <code>Q = mcΔT</code></p>
+            <p><strong>Entropie :</strong> <code>ΔS = Q/T</code></p>
+            <p><strong>Loi de Boyle-Mariotte :</strong> <code>P₁V₁ = P₂V₂</code></p>
+            <p><strong>Rendement thermique :</strong> <code>η = 1 - T_f/T_c</code></p>
+        </div>
+    </div>
+
+    <div id="electricite" class="section">
+        <h2>Électricité</h2>
+        <div class="formula">
+            <p><strong>Loi d'Ohm :</strong> <code>U = RI</code></p>
+            <p><strong>Puissance électrique :</strong> <code>P = UI = RI²</code></p>
+            <p><strong>Force de Coulomb :</strong> <code>F = k(q₁q₂)/r²</code></p>
+            <p><strong>Champ électrique :</strong> <code>E = F/q = k(Q/r²)</code></p>
+            <p><strong>Capacité :</strong> <code>C = Q/U</code></p>
+            <p><strong>Résistances série :</strong> <code>R_eq = R₁ + R₂ + R₃</code></p>
+        </div>
+    </div>
+
+    <div id="magnetisme" class="section">
+        <h2>Magnétisme</h2>
+        <div class="formula">
+            <p><strong>Force de Lorentz :</strong> <code>F = qv×B</code></p>
+            <p><strong>Loi de Biot-Savart :</strong> <code>dB = (μ₀/4π)(Idl×r/r³)</code></p>
+            <p><strong>Flux magnétique :</strong> <code>Φ = B·S</code></p>
+            <p><strong>Loi de Faraday :</strong> <code>ε = -dΦ/dt</code></p>
+            <p><strong>Inductance :</strong> <code>L = Φ/I</code></p>
+            <p><strong>Force entre fils :</strong> <code>F/l = (μ₀/2π)(I₁I₂/d)</code></p>
+        </div>
+    </div>
+
+    <div id="optique" class="section">
+        <h2>Optique</h2>
+        <div class="formula">
+            <p><strong>Loi de Snell-Descartes :</strong> <code>n₁sin(θ₁) = n₂sin(θ₂)</code></p>
+            <p><strong>Lentille mince :</strong> <code>1/f = 1/p + 1/p'</code></p>
+            <p><strong>Grandissement :</strong> <code>γ = -p'/p = h'/h</code></p>
+            <p><strong>Diffraction :</strong> <code>sinθ = λ/a</code></p>
+            <p><strong>Interférences :</strong> <code>δ = 2d·sin(θ)</code></p>
+            <p><strong>Energie photon :</strong> <code>E = hν = hc/λ</code></p>
+        </div>
+    </div>
+
+    <div id="ondes" class="section">
+        <h2>Ondes</h2>
+        <div class="formula">
+            <p><strong>Vitesse de phase :</strong> <code>v = λf</code></p>
+            <p><strong>Effet Doppler :</strong> <code>f' = f(v ± v_s)/(v ∓ v_o)</code></p>
+            <p><strong>Onde sonore :</strong> <code>v = √(γRT/M)</code></p>
+            <p><strong>Intensité sonore :</strong> <code>I = P/S</code></p>
+            <p><strong>Niveau sonore :</strong> <code>L = 10log(I/I₀)</code></p>
+            <p><strong>Onde stationnaire :</strong> <code>f_n = nv/2L</code></p>
+        </div>
+    </div>
+
+    <div id="nucleaire" class="section">
+        <h2>Physique Nucléaire</h2>
+        <div class="formula">
+            <p><strong>Équivalence masse-énergie :</strong> <code>E = mc²</code></p>
+            <p><strong>Énergie de liaison :</strong> <code>E_l = Δm·c²</code></p>
+            <p><strong>Loi de décroissance :</strong> <code>N(t) = N₀e^(-λt)</code></p>
+            <p><strong>Demi-vie :</strong> <code>t₁/₂ = ln(2)/λ</code></p>
+            <p><strong>Activité :</strong> <code>A = λN</code></p>
+            <p><strong>Défaut de masse :</strong> <code>Δm = Zm_p + Nm_n - M</code></p>
+        </div>
+    </div>
+
+    <div id="relativite" class="section">
+        <h2>Relativité</h2>
+        <div class="formula">
+            <p><strong>Dilatation du temps :</strong> <code>Δt = Δt₀/√(1-v²/c²)</code></p>
+            <p><strong>Contraction des longueurs :</strong> <code>L = L₀√(1-v²/c²)</code></p>
+            <p><strong>Masse relativiste :</strong> <code>m = m₀/√(1-v²/c²)</code></p>
+            <p><strong>Quantité de mouvement :</strong> <code>p = mv/√(1-v²/c²)</code></p>
+            <p><strong>Énergie totale :</strong> <code>E = mc² = m₀c²/√(1-v²/c²)</code></p>
+        </div>
+    </div>
+
+    <div id="quantique" class="section">
+        <h2>Physique Quantique</h2>
+        <div class="formula">
+            <p><strong>Relation de de Broglie :</strong> <code>λ = h/p</code></p>
+            <p><strong>Principe d'incertitude :</strong> <code>ΔxΔp ≥ ħ/2</code></p>
+            <p><strong>Équation de Schrödinger :</strong> <code>iħ∂Ψ/∂t = ĤΨ</code></p>
+            <p><strong>Énergie quantique :</strong> <code>E = hf</code></p>
+            <p><strong>Niveaux d'énergie :</strong> <code>E_n = -13.6eV/n²</code></p>
+            <p><strong>Spin :</strong> <code>S = ±ħ/2</code></p>
+        </div>
+    </div>
+
+</body>
+</html>
